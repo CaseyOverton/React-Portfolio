@@ -3,6 +3,7 @@ import Wrapper from "./components/Wrapper";
 import NavBar from "./components/NavBar";
 import {ThemeProvider, Button} from "@material-ui/core"
 import theme from "./theme"
+import { Router, Route, Switch } from "react-router";
 
 constructor(props) {
 super(props);
@@ -16,9 +17,14 @@ this.state = {
   home: {
     title:'Casey Overton Portfolio'
     subTitle: 'Projects that make the difference',
-    text
+    text:'Checkout projects below'
   },
-  abbout
+  about: {
+    title: "About Me"
+  },
+  conact: {
+    title: "Let's Talk"
+  }
 }
 
 }
@@ -27,6 +33,7 @@ this.state = {
 class App extends React.Component  {
   render() {
     return (
+      <Router>
     <ThemeProvider theme={theme}>
       <NavBar />
     <Button variant="contained" color="secondary">
@@ -35,7 +42,8 @@ class App extends React.Component  {
     <Button variant="contained" color="primary">
       Secondary
     </Button>
-  </ThemeProvider>
+   </ThemeProvider>
+  </Router>
     );
   }
 }
