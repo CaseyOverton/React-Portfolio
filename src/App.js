@@ -3,18 +3,22 @@ import Wrapper from "./components/Wrapper";
 import Breadcrumb from "./components/Breadcrumb";
 import {ThemeProvider, Button} from "@material-ui/core"
 import theme from "./theme"
-import { Router, Route, Switch } from "react-router";
-import Footer from "./components/Footer"
-import Cards from "./components/Breadcrumb"
+import { Route, Switch } from "react-router-dom";
+import Footer from "./components/Footer";
+import Cards from "./components/Breadcrumb";
+import HomePage from "./components/Page/HomePage"
+import { BrowserRouter as Router } from 'react-router-dom'
+// class App extends React.Component {
+
 
 // constructor(props) {
 // super(props);
 // this.state = {
-//   title: 'Casey Overton'
+//   title: 'Casey Overton',
 //   headerLinks: [
-//     { title: 'Home', path: '/'},
-//     { title: 'About', path: '/about'},
-//     { title: 'Contract', path: '/contact'},
+//     { title: 'Home', path: '/' },
+//     { title: 'About', path: '/about' },
+//     { title: 'Contract', path: '/contact' },
 //   ],
 //   home: {
 //     title:'Casey Overton Portfolio',
@@ -24,27 +28,25 @@ import Cards from "./components/Breadcrumb"
 //   about: {
 //     title: "About Me"
 //   },
-//   conact: {
+//   contact: {
 //     title: "Let's Talk"
 //   }
+//  }
 // }
 
 
-
-class App extends React.Component  {
-  render() {
+  
+  function App() {
     return (
-      // <Router>
-    <ThemeProvider theme={theme}>
+  <Router>
+  <ThemeProvider theme={theme}>
   <Breadcrumb />
-  <Route path="/" exact render={() <Home} />
-  }
- <Footer variant="contained" color="primary"/>
+    <Route path="/"  component={HomePage} />
+ <Footer variant="contained" color="primary" />
  </ThemeProvider>
-  // </Router>
-    )
-  }}
-
+  </Router>
+  );
+}
 
 
 export default App;
