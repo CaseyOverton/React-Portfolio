@@ -56,11 +56,15 @@
   background-image: url(../assets/Img/contact.png);
   height: 800px;
   background-size: 100% 100%;
-
-
+}
+.resume {
+  background-image: url(../assets/Img/Resume.png);
+  height: 1600px;
+  background-size: 100% 100%;
 }
 .text {
   margin-left: 4%;
+  font-weight: boldest;
 }
 
 
