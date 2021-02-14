@@ -1,9 +1,11 @@
 import React from 'react';
 import { CarouselProvider, Slider, Slide, ButtonBack, ButtonNext } from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';
- import ContactCard from "../ContactCard"
-import '../../../style/style.css'
-
+ import '../../../style/style.css'
+ import ContactCard1 from "../../cards/ContactCard1"
+ import ContactCard2 from "../../cards/ContactCard2"
+ import ContactCard3 from "../../cards/ContactCard3"
+ import ContactCard4 from "../../cards/ContactCard4"
 
 
 export default class Carousels extends React.Component {
@@ -24,9 +26,9 @@ export default class Carousels extends React.Component {
         totalSlides={3}
       >
         <Slider>
-          <Slide index={0}><ContactCard /></Slide>
-          <Slide index={1}><ContactCard /></Slide>
-          <Slide index={2}><ContactCard /></Slide>
+          <Slide index={0}><ContactCard1 /></Slide>
+          <Slide index={1}><ContactCard2 /></Slide>
+          <Slide index={2}><ContactCard3 /></Slide>
         </Slider>
       </CarouselProvider>
       </div>

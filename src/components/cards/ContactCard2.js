@@ -11,7 +11,7 @@ import Typography from '@material-ui/core/Typography';
 import img1 from "../../assets/Img/GroupProject.png"
 import Link from "@material-ui/core/Link"
 import theme from "../../theme"
-import {createMuiTheme} from '@material-ui/core'
+import {ThemeProvider} from '@material-ui/core'
 const useStyles = makeStyles({
   root: {
     maxWidth: 375,
@@ -22,7 +22,7 @@ const useStyles = makeStyles({
 });
 
 
-export default function ContactCard1() {
+export default function ContactCard2() {
   const classes = useStyles();
 
   return (
@@ -34,29 +34,28 @@ export default function ContactCard1() {
           className={classes.media}
           image= {img1}
         />
-        <CardContent>
+        <CardContent color='primary'>
           <Typography gutterBottom variant="h5" component="h2">
             YardSale
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Worked with a group of developers to create "YardSale", an application that allows buyers to connect with local sellers. 
+            Collaborated with group of developers to create "YardSale", an application that allows buyers to connect with local retailers and merchants. 
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
       <Paper>
-        <Button href="https://github.com/jamescbaldwin/DEMO100" size="small" color="primary">
+        <Button href="https://github.com/CaseyOverton/employeeDirectory" size="small" color="Primary">
           Github Repo
         </Button>
         </Paper>
         <Paper>
-        <Button href="https://enigmatic-savannah-33392.herokuapp.com/seller" size="small" color="primary">
+        <Button href="https://enigmatic-savannah-33392.herokuapp.com/seller" size="small" color="Primary">
           Deployed Heroku Link
         </Button>
         </Paper>
       </CardActions>
     </Card>
-
 </ThemeProvider>
 
 );

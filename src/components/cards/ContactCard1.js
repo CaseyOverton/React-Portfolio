@@ -8,10 +8,10 @@ import CardMedia from '@material-ui/core/CardMedia';
 import Paper from '@material-ui/core/Paper';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
-import img1 from "../../assets/Img/GroupProject.png"
+import img1 from "../../assets/Img/EmployeeDirectory.png"
 import Link from "@material-ui/core/Link"
 import theme from "../../theme"
-import {createMuiTheme} from '@material-ui/core'
+import {createMuiTheme, ThemeProvider} from '@material-ui/core'
 const useStyles = makeStyles({
   root: {
     maxWidth: 375,
@@ -36,22 +36,22 @@ export default function ContactCard1() {
         />
         <CardContent>
           <Typography gutterBottom variant="h5" component="h2">
-            YardSale
+            Employee Directory
           </Typography>
           <Typography variant="body2" color="textSecondary" component="p">
-            Worked with a group of developers to create "YardSale", an application that allows buyers to connect with local sellers. 
+           Employee Directory with filter and search capabilities created with React.
           </Typography>
         </CardContent>
       </CardActionArea>
       <CardActions>
       <Paper>
-        <Button href="https://github.com/jamescbaldwin/DEMO100" size="small" color="primary">
+        <Button href="https://github.com/CaseyOverton/employeeDirectory" size="small" color="primary">
           Github Repo
         </Button>
         </Paper>
         <Paper>
-        <Button href="https://enigmatic-savannah-33392.herokuapp.com/seller" size="small" color="primary">
-          Deployed Heroku Link
+        <Button href="https://caseyoverton.github.io/employeeDirectory/" size="small" color="primary">
+          Deployed Link
         </Button>
         </Paper>
       </CardActions>
