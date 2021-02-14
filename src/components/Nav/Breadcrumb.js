@@ -24,9 +24,6 @@ export default function Breadcrumb() {
         <Link color="Secondary" href="/Resume">
           Resume
         </Link>
-        <Link color="Secondary" href="/About">
-          About
-        </Link>
       </Breadcrumbs>
     );
   }

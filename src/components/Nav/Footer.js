@@ -37,10 +37,7 @@ export default function Footer() {
       <BottomNavigationAction href="/Contact" label="Contact" value="contact" icon={<ContactMailIcon color='secondary'  />} />
 
       <BottomNavigationAction href="/Resume" label="Resume" value="resume" icon={<DashboardSharpIcon  color='secondary' />} />
-
-      <BottomNavigationAction href="/About" label="About Me" value="aboutMe" icon={<ClearAllSharpIcon  color='secondary' />} />
-    </BottomNavigation>
-
+     </BottomNavigation>
     </ThemeProvider>
   );
 }
