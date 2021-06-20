@@ -16,15 +16,15 @@ import { BrowserRouter as Router } from 'react-router-dom'
   
   function App() {
     return (
-  <Router>
-    
+  
+   <>
   <Breadcrumb />
-  <Route path="/" exact component={HomePage} />
-  <Route path="/Contact" exact component={ContactPage} />
-  <Route path="/Resume" exact component={Resume} />
- <Footer variant="contained" />
+  <HomePage />
+  <ContactPage />
+  <Resume />
+ </> 
 
-  </Router>
+ 
   );
 }
 
